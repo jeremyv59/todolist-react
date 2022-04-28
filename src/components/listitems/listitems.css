@@ -1,0 +1,13 @@
+.list_container {
+  margin: auto;
+  padding: 0rem 2rem;
+  width: 50%;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .list_container {
+    width: 100%;
+  }
+}
