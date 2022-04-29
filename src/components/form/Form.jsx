@@ -8,8 +8,8 @@ const Form = ({ taskList, setTaskList }) => {
   const addInList = (e) => {
     e.preventDefault();
     const newArray = [...taskList, newTask];
-
     setTaskList(newArray);
+    setNewTask("");
   };
 
   return (
@@ -19,6 +19,7 @@ const Form = ({ taskList, setTaskList }) => {
           Tâches à réaliser
         </label>
         <input
+          value={newTask}
           onInput={(e) => onChangeTaskValue(e.target.value)}
           type="text"
           className="form-control"
